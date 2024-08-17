@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+header .logo {
+    width: 70px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #555;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav a:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service {
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.service h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.service p {
+    font-size: 0.9em;
+}
+
+.service ul {
+    list-style: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.service ul li {
+    margin: 5px 0;
+}
+
+/* Social Media Icons */
+.contact-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.contact-media .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-media .icon i {
+    font-size: 24px;
+}
+
+.contact-media .icon:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.contact-media .label {
+    display: none;
+}
+
+/* Clients Page Styles */
+.clients-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.client-item {
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.client-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.client-item div {
+    flex: 1;
+}
+
+.client-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.client-item p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
