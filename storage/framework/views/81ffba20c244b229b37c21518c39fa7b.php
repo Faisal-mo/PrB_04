@@ -1,24 +1,24 @@
-@if(session('success'))
-    <p>{{ session('success') }}</p>
-@endif
+<?php if(session('success')): ?>
+    <p><?php echo e(session('success')); ?></p>
+<?php endif; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/styles.css')); ?>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </head>
 <body>
     <header>
-        <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="logo">
+        <img src="<?php echo e(asset('images/logo.jpg')); ?>" alt="Logo" class="logo">
         <nav>
-            <a href="{{ route('home') }}">Home</a>
-            <a href="{{ route('about') }}">About</a>
-            <a href="{{ route('customers') }}">Customers</a>
-            <a href="{{ route('services') }}">Services</a>
-            <a href="{{ route('contact') }}">Contact</a>
+            <a href="<?php echo e(route('home')); ?>">Home</a>
+            <a href="<?php echo e(route('about')); ?>">About</a>
+            <a href="<?php echo e(route('customers')); ?>">Customers</a>
+            <a href="<?php echo e(route('services')); ?>">Services</a>
+            <a href="<?php echo e(route('contact')); ?>">Contact</a>
         </nav>
     </header>
 
@@ -114,6 +114,7 @@
         
     </main>
 
-    <script src="{{ asset('js/scripts.js') }}"></script>
+    <script src="<?php echo e(asset('js/scripts.js')); ?>"></script>
 </body>
 </html>
+<?php /**PATH C:\xampp\htdocs\PrB_04\resources\views/servicesIndex.blade.php ENDPATH**/ ?>

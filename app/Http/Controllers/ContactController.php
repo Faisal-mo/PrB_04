@@ -7,17 +7,21 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-	public function store(Request $request)
-{
-    $validated = $request->validate([
-        'name' => 'required',
-        'email' => 'required|email',
-        'message' => 'required',
-    ]);
+    public function index()
+    {
+        return view('contact'); // Display the contact form
+    }
 
-    Contact::create($validated);
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+        ]);
 
-    return redirect()->back()->with('success', 'Message sent successfully!');
-}
+        Contact::create($validated);
 
+        return redirect()->back()->with('success', 'Message sent successfully!');
+    }
 }
